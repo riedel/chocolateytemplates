@@ -15,14 +15,18 @@
     <copyright></copyright>
     <licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!-- Important note about https://cdn.rawgit.com: Files are cached permanently after the first request. Use commit URLs when updating the icon. -->
-    <!--<iconUrl>http://cdn.rawgit.com/__CHOCO_PKG_MAINTAINER_REPO__/master/icons/__NAME__.png</iconUrl>-->
-    <!--<dependencies>
-      <dependency id="" version="{{PackageVersion}}" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <iconUrl>https://cdn.rawgit.com/StreamWhatYouHear/SWYH/{{PackageVersion}}/SWYH/Resources/Icons/swyh128.png</iconUrl>
+    <releaseNotes>https://github.com/StreamWhatYouHear/SWYH/releases/tag/{{PackageVersion}}</releaseNotes>
+    <dependencies>
+  	<dependency id="chocolatey-uninstall.extension" version="1.0" />
+    </dependencies>
+    <packageSourceUrl>https://github.com/riedel/chocolatey-packages/tree/master/swyh</packageSourceUrl>
+    <projectSourceUrl></projectSourceUrl>
+    <bugTrackerUrl></bugTrackerUrl>
+    <docsUrl></docsUrl>
+    <mailingListUrl></mailingListUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\*.ps1" target="tools" />
   </files>
 </package>
